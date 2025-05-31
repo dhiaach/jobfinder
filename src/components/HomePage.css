@@ -1,0 +1,19 @@
+/* In App.css or HomePage.css */
+.success-banner {
+  padding: 15px;
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  animation: slideDown 0.5s ease-out;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}

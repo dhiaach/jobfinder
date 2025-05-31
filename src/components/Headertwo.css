@@ -1,0 +1,293 @@
+/* Header.css - Medium Size */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2.5rem; /* Between original (1rem) and large (1.5rem) */
+  background-color: #1a73e8;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-family: system-ui, -apple-system, sans-serif;
+  height: 70px; /* Original: auto, Large: 80px */
+}
+
+/* Logo Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem; /* Original: 2rem, Large: 2rem */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; /* Original: 0.5rem */
+  font-size: 1.6rem; /* Original: 1.5rem, Large: 1.8rem */
+  font-weight: 700;
+  color: white;
+}
+
+.logo-icon {
+  font-size: 1.9rem; /* Original: 1.8rem, Large: 2rem */
+  color: white;
+}
+
+/* Main Navigation */
+.main-nav {
+  display: flex;
+  gap: 1.75rem; /* Original: 1.5rem, Large: 2rem */
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem; /* Original: 1rem, Large: 1.1rem */
+  padding: 0.7rem 1rem; /* Original: 0.5rem, Large: 0.8rem */
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem; /* Original: 1.5rem, Large: 2rem */
+  position: relative;
+}
+
+/* Notification Button */
+.notification-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem; /* Original: 1.2rem, Large: 1.4rem */
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.2s;
+}
+
+/* Account Dropdown */
+.account-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; /* Original: 0.5rem */
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 0.7rem 1.1rem; /* Original: 0.5rem, Large: 0.75rem */
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.05rem; /* Original: 1rem, Large: 1.1rem */
+  transition: all 0.2s;
+}
+
+.account-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 190px; /* Original: 180px, Large: 200px */
+  padding: 0.6rem 0; /* Original: 0.5rem, Large: 0.75rem */
+  margin-top: 0.6rem;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem; /* Original: 0.75rem */
+  width: 100%;
+  padding: 0.9rem 1.25rem; /* Original: 0.75rem, Large: 1rem */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2c3e50;
+  font-size: 0.95rem; /* Original: 0.9rem, Large: 1rem */
+  transition: all 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f9ff;
+  color: #1a73e8;
+}
+
+/* Modal Styles (Unchanged) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.modal-box h2 {
+  margin: 0 0 1.5rem 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-box input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.modal-box input:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.modal-box button[type="submit"] {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.modal-box button[type="submit"]:hover {
+  background-color: #1765cc;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #7f8c8d;
+  padding: 0.25rem;
+  line-height: 1;
+}
+
+.close-button:hover {
+  color: #2c3e50;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 2rem;
+    height: 65px;
+  }
+  
+  .logo {
+    font-size: 1.4rem;
+  }
+  
+  .logo-icon {
+    font-size: 1.6rem;
+  }
+  
+  .main-nav {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .account-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ADD THESE TO YOUR EXISTING Header.css */
+
+/* 1. Critical Z-Index Fix (Prevent dropdown under modal) */
+.modal-overlay {
+  z-index: 2000; /* Must be higher than header's 1000 */
+}
+
+.dropdown-menu {
+  z-index: 1500; /* Between header (1000) and modal (2000) */
+}
+
+/* 2. Mandatory Error Message Styles */
+.error-message {
+  color: #ff0000; /* Brighter red for visibility */
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  display: block; /* Required for error spacing */
+}
+
+/* 3. Loading State Requirement */
+button[disabled] {
+  opacity: 0.7 !important;
+  cursor: not-allowed !important;
+}
+
+/* 4. Modal Interaction Fix (Absolute requirement) */
+.modal-overlay {
+  cursor: pointer; /* Visual feedback for click-to-close */
+}
+
+.modal-box {
+  cursor: auto; /* Prevent text cursor on modal */
+}
+
+/* Better loading animation */
+@keyframes loading-pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.loading-text {
+  animation: loading-pulse 1.5s infinite;
+}
+
+/* Better password mismatch emphasis */
+input:invalid {
+  border-color: #ff0000;
+}

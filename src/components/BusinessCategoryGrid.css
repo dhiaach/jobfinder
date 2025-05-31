@@ -1,0 +1,119 @@
+/* Container Styles */
+.business-categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.business-categories-title {
+  font-size: 1.6rem;
+  color: #2d3748;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Grid Layout - More compact */
+.business-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+/* Tile Styles - More compact */
+.business-category-tile {
+  display: flex;
+  background: white;
+  border-radius: 5px;
+  padding: 0.9rem;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  border: 1px solid #edf2f7;
+  min-height: 80px; /* Reduced height */
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effects */
+.business-category-tile:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border-color: #4299e1;
+}
+
+/* Content Layout */
+.business-category-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* Count Style - Smaller */
+.business-category-count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4299e1;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Name Style - Smaller */
+.business-category-name {
+  font-size: 1.09rem;
+  font-weight: 500;
+  margin: 0;
+  color: #2d3748;
+  flex-grow: 1;
+  line-height: 1.3;
+}
+
+/* Empty Category Style */
+.empty-category {
+  opacity: 0.6;
+  background-color: #f8fafc;
+}
+
+/* Accent Bar - Thinner */
+.business-category-tile::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #4299e1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .business-categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.8rem;
+  }
+  
+  .business-category-count {
+    font-size: 1.3rem;
+  }
+  
+  .business-category-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-categories-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  
+  .business-category-tile {
+    min-height: 70px;
+    padding: 0.8rem;
+  }
+}

@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+}
+  
+/* Complete CSS for Job Post Page */
+.job-post-page {
+    background: #f8fafc;
+    min-height: 100vh;
+  }
+  
+  .posting-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  
+  /* Hero Section */
+  .posting-hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-top: 4px solid #3b82f6;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Stats Section */
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #f8fafc;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .stat-icon {
+    color: #3b82f6;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+  
+  .stat-item span {
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  /* Benefits Section */
+  .posting-benefits {
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .posting-benefits h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-bottom: 3rem;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .benefit-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .benefit-icon {
+    font-size: 2rem;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit-card h4 {
+    color: #1e293b;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .benefit-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .posting-container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .hero-title {
+      font-size: 1.8rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  
+    .stat-item {
+      padding: 0.7rem 1rem;
+    }
+  
+    .benefits-grid {
+      gap: 1.5rem;
+    }
+  
+    .benefit-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .posting-hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero-title {
+      font-size: 1.6rem;
+    }
+  
+    .stat-item span {
+      font-size: 0.9rem;
+    }
+  }
+
+  
